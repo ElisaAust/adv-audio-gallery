@@ -1,0 +1,310 @@
+<!doctype html><html><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>对抗性音频集（equal-SNR / equal-cosD）</title>
+<style>body{font-family:Arial,Helvetica,sans-serif;max-width:1080px;margin:20px auto;padding:0 12px;} h2{margin-top:28px;} .card{border:1px solid #ddd;border-radius:8px;padding:12px;margin:16px 0;} .row{display:flex;gap:16px;flex-wrap:wrap;} .col{flex:1 1 320px;} table{width:100%;border-collapse:collapse;margin-top:8px;} th,td{border:1px solid #e6e6e6;padding:6px 8px;font-size:13px;text-align:center;} .base{color:#555;font-size:12px;margin-bottom:8px;} .miss{color:#c00;font-weight:bold;} audio{width:100%;}</style>
+</head><body>
+<h1>对抗性音频集（equal-SNR / equal-cosD）</h1>
+<p>每条包含 Original / I-FGSM / NI-FGSM 三段音频，可直接播放。下方表格给出对应的 SNR 与 cosD（= -cos）。</p>
+<h2>equal-SNR</h2>
+<div class='card'>
+<div class='base'>#1 &nbsp;&nbsp; base: 121-127105-0014</div>
+<div class='row'>
+<div class='col'>
+<b>Original</b><br>
+<audio controls preload='none' src='audios/equal-SNR_orig_01__121-127105-0014_ifgsm_eps0.02_a0.0004_T50_ri1.wav'></audio>
+</div>
+<div class='col'>
+<b>I-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-SNR_ifgsm_01__121-127105-0014_ifgsm_eps0.02_a0.0004_T50_tcos-0.9992.wav'></audio>
+</div>
+<div class='col'>
+<b>NI-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-SNR_nifgsm_01__121-127105-0014_nifgsm_eps0.02_a0.0004_T50_mu0.6_tcos-0.9992.wav'></audio>
+</div>
+</div>
+<table><tr>
+<th>SNR (I-FGSM)</th>
+<th>SNR (NI-FGSM)</th>
+<th>cosD (I-FGSM)</th>
+<th>cosD (NI-FGSM)</th>
+<th>Δ(依据CSV)</th>
+</tr><tr>
+<td>7.350</td>
+<td>7.350</td>
+<td>-0.005</td>
+<td>0.051</td>
+<td>0.056</td>
+</tr></table>
+</div>
+<div class='card'>
+<div class='base'>#2 &nbsp;&nbsp; base: 672-122797-0019</div>
+<div class='row'>
+<div class='col'>
+<b>Original</b><br>
+<audio controls preload='none' src='audios/equal-SNR_orig_02__672-122797-0019_ifgsm_eps0.02_a0.0004_T50_ri1.wav'></audio>
+</div>
+<div class='col'>
+<b>I-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-SNR_ifgsm_02__672-122797-0019_ifgsm_eps0.02_a0.0004_T50_tcos-0.9992.wav'></audio>
+</div>
+<div class='col'>
+<b>NI-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-SNR_nifgsm_02__672-122797-0019_nifgsm_eps0.02_a0.0004_T50_mu0.6_tcos-0.9992.wav'></audio>
+</div>
+</div>
+<table><tr>
+<th>SNR (I-FGSM)</th>
+<th>SNR (NI-FGSM)</th>
+<th>cosD (I-FGSM)</th>
+<th>cosD (NI-FGSM)</th>
+<th>Δ(依据CSV)</th>
+</tr><tr>
+<td>7.350</td>
+<td>7.350</td>
+<td>0.059</td>
+<td>0.157</td>
+<td>0.098</td>
+</tr></table>
+</div>
+<div class='card'>
+<div class='base'>#3 &nbsp;&nbsp; base: 6829-68769-0038</div>
+<div class='row'>
+<div class='col'>
+<b>Original</b><br>
+<audio controls preload='none' src='audios/equal-SNR_orig_03__6829-68769-0038_ifgsm_eps0.02_a0.0004_T50_ri1.wav'></audio>
+</div>
+<div class='col'>
+<b>I-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-SNR_ifgsm_03__6829-68769-0038_ifgsm_eps0.02_a0.0004_T50_tcos-0.9992.wav'></audio>
+</div>
+<div class='col'>
+<b>NI-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-SNR_nifgsm_03__6829-68769-0038_nifgsm_eps0.02_a0.0004_T50_mu0.6_tcos-0.9992.wav'></audio>
+</div>
+</div>
+<table><tr>
+<th>SNR (I-FGSM)</th>
+<th>SNR (NI-FGSM)</th>
+<th>cosD (I-FGSM)</th>
+<th>cosD (NI-FGSM)</th>
+<th>Δ(依据CSV)</th>
+</tr><tr>
+<td>7.350</td>
+<td>7.350</td>
+<td>-0.189</td>
+<td>-0.173</td>
+<td>0.017</td>
+</tr></table>
+</div>
+<div class='card'>
+<div class='base'>#4 &nbsp;&nbsp; base: 6829-68769-0000</div>
+<div class='row'>
+<div class='col'>
+<b>Original</b><br>
+<audio controls preload='none' src='audios/equal-SNR_orig_04__6829-68769-0000_ifgsm_eps0.02_a0.0004_T50_ri1.wav'></audio>
+</div>
+<div class='col'>
+<b>I-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-SNR_ifgsm_04__6829-68769-0000_ifgsm_eps0.02_a0.0004_T50_tcos-0.9992.wav'></audio>
+</div>
+<div class='col'>
+<b>NI-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-SNR_nifgsm_04__6829-68769-0000_nifgsm_eps0.02_a0.0004_T50_mu0.6_tcos-0.9992.wav'></audio>
+</div>
+</div>
+<table><tr>
+<th>SNR (I-FGSM)</th>
+<th>SNR (NI-FGSM)</th>
+<th>cosD (I-FGSM)</th>
+<th>cosD (NI-FGSM)</th>
+<th>Δ(依据CSV)</th>
+</tr><tr>
+<td>7.350</td>
+<td>7.350</td>
+<td>0.085</td>
+<td>0.085</td>
+<td>0.000</td>
+</tr></table>
+</div>
+<div class='card'>
+<div class='base'>#5 &nbsp;&nbsp; base: 4446-2273-0033</div>
+<div class='row'>
+<div class='col'>
+<b>Original</b><br>
+<audio controls preload='none' src='audios/equal-SNR_orig_05__4446-2273-0033_ifgsm_eps0.02_a0.0004_T50_ri1.wav'></audio>
+</div>
+<div class='col'>
+<b>I-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-SNR_ifgsm_05__4446-2273-0033_ifgsm_eps0.02_a0.0004_T50_tcos-0.9992.wav'></audio>
+</div>
+<div class='col'>
+<b>NI-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-SNR_nifgsm_05__4446-2273-0033_nifgsm_eps0.02_a0.0004_T50_mu0.6_tcos-0.9992.wav'></audio>
+</div>
+</div>
+<table><tr>
+<th>SNR (I-FGSM)</th>
+<th>SNR (NI-FGSM)</th>
+<th>cosD (I-FGSM)</th>
+<th>cosD (NI-FGSM)</th>
+<th>Δ(依据CSV)</th>
+</tr><tr>
+<td>7.350</td>
+<td>7.350</td>
+<td>0.256</td>
+<td>0.375</td>
+<td>0.119</td>
+</tr></table>
+</div>
+<h2>equal-cosD</h2>
+<div class='card'>
+<div class='base'>#1 &nbsp;&nbsp; base: 237-134500-0028</div>
+<div class='row'>
+<div class='col'>
+<b>Original</b><br>
+<audio controls preload='none' src='audios/equal-cosD_orig_01__237-134500-0028_ifgsm_eps0.02_a0.0004_T50_ri1.wav'></audio>
+</div>
+<div class='col'>
+<b>I-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-cosD_ifgsm_01__237-134500-0028_ifgsm_eps0.02_a0.0004_T50_tcos-0.9992.wav'></audio>
+</div>
+<div class='col'>
+<b>NI-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-cosD_nifgsm_01__237-134500-0028_nifgsm_eps0.02_a0.0004_T50_mu0.6_tcos-0.9992.wav'></audio>
+</div>
+</div>
+<table><tr>
+<th>SNR (I-FGSM)</th>
+<th>SNR (NI-FGSM)</th>
+<th>cosD (I-FGSM)</th>
+<th>cosD (NI-FGSM)</th>
+<th>Δ(依据CSV)</th>
+</tr><tr>
+<td>33.480</td>
+<td>34.190</td>
+<td>-0.999</td>
+<td>-0.999</td>
+<td>0.710</td>
+</tr></table>
+</div>
+<div class='card'>
+<div class='base'>#2 &nbsp;&nbsp; base: 5683-32879-0001</div>
+<div class='row'>
+<div class='col'>
+<b>Original</b><br>
+<audio controls preload='none' src='audios/equal-cosD_orig_02__5683-32879-0001_ifgsm_eps0.02_a0.0004_T50_ri1.wav'></audio>
+</div>
+<div class='col'>
+<b>I-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-cosD_ifgsm_02__5683-32879-0001_ifgsm_eps0.02_a0.0004_T50_tcos-0.9992.wav'></audio>
+</div>
+<div class='col'>
+<b>NI-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-cosD_nifgsm_02__5683-32879-0001_nifgsm_eps0.02_a0.0004_T50_mu0.6_tcos-0.9992.wav'></audio>
+</div>
+</div>
+<table><tr>
+<th>SNR (I-FGSM)</th>
+<th>SNR (NI-FGSM)</th>
+<th>cosD (I-FGSM)</th>
+<th>cosD (NI-FGSM)</th>
+<th>Δ(依据CSV)</th>
+</tr><tr>
+<td>35.050</td>
+<td>37.150</td>
+<td>-0.999</td>
+<td>-0.999</td>
+<td>2.100</td>
+</tr></table>
+</div>
+<div class='card'>
+<div class='base'>#3 &nbsp;&nbsp; base: 1188-133604-0011</div>
+<div class='row'>
+<div class='col'>
+<b>Original</b><br>
+<audio controls preload='none' src='audios/equal-cosD_orig_03__1188-133604-0011_ifgsm_eps0.02_a0.0004_T50_ri1.wav'></audio>
+</div>
+<div class='col'>
+<b>I-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-cosD_ifgsm_03__1188-133604-0011_ifgsm_eps0.02_a0.0004_T50_tcos-0.9992.wav'></audio>
+</div>
+<div class='col'>
+<b>NI-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-cosD_nifgsm_03__1188-133604-0011_nifgsm_eps0.02_a0.0004_T50_mu0.6_tcos-0.9992.wav'></audio>
+</div>
+</div>
+<table><tr>
+<th>SNR (I-FGSM)</th>
+<th>SNR (NI-FGSM)</th>
+<th>cosD (I-FGSM)</th>
+<th>cosD (NI-FGSM)</th>
+<th>Δ(依据CSV)</th>
+</tr><tr>
+<td>41.830</td>
+<td>41.750</td>
+<td>-0.999</td>
+<td>-0.999</td>
+<td>-0.080</td>
+</tr></table>
+</div>
+<div class='card'>
+<div class='base'>#4 &nbsp;&nbsp; base: 1580-141084-0030</div>
+<div class='row'>
+<div class='col'>
+<b>Original</b><br>
+<audio controls preload='none' src='audios/equal-cosD_orig_04__1580-141084-0030_ifgsm_eps0.02_a0.0004_T50_ri1.wav'></audio>
+</div>
+<div class='col'>
+<b>I-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-cosD_ifgsm_04__1580-141084-0030_ifgsm_eps0.02_a0.0004_T50_tcos-0.9992.wav'></audio>
+</div>
+<div class='col'>
+<b>NI-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-cosD_nifgsm_04__1580-141084-0030_nifgsm_eps0.02_a0.0004_T50_mu0.6_tcos-0.9992.wav'></audio>
+</div>
+</div>
+<table><tr>
+<th>SNR (I-FGSM)</th>
+<th>SNR (NI-FGSM)</th>
+<th>cosD (I-FGSM)</th>
+<th>cosD (NI-FGSM)</th>
+<th>Δ(依据CSV)</th>
+</tr><tr>
+<td>35.810</td>
+<td>35.810</td>
+<td>-0.999</td>
+<td>-0.999</td>
+<td>0.000</td>
+</tr></table>
+</div>
+<div class='card'>
+<div class='base'>#5 &nbsp;&nbsp; base: 4446-2273-0035</div>
+<div class='row'>
+<div class='col'>
+<b>Original</b><br>
+<audio controls preload='none' src='audios/equal-cosD_orig_05__4446-2273-0035_ifgsm_eps0.02_a0.0004_T50_ri1.wav'></audio>
+</div>
+<div class='col'>
+<b>I-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-cosD_ifgsm_05__4446-2273-0035_ifgsm_eps0.02_a0.0004_T50_tcos-0.9992.wav'></audio>
+</div>
+<div class='col'>
+<b>NI-FGSM</b><br>
+<audio controls preload='none' src='audios/equal-cosD_nifgsm_05__4446-2273-0035_nifgsm_eps0.02_a0.0004_T50_mu0.6_tcos-0.9992.wav'></audio>
+</div>
+</div>
+<table><tr>
+<th>SNR (I-FGSM)</th>
+<th>SNR (NI-FGSM)</th>
+<th>cosD (I-FGSM)</th>
+<th>cosD (NI-FGSM)</th>
+<th>Δ(依据CSV)</th>
+</tr><tr>
+<td>35.150</td>
+<td>35.650</td>
+<td>-0.999</td>
+<td>-0.999</td>
+<td>0.500</td>
+</tr></table>
+</div>
+</body></html>
